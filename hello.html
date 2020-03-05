@@ -11,7 +11,7 @@
 		<h2>large</h2>
 		<h3>smaller</h3>
 		<h4>smaller yet</h4>
-		<h5>small</h5>
+		<h1 id="linkhere">small</h5>
 		Hello hello
 		<ul>
 			<li>item 1</li>
@@ -19,13 +19,29 @@
 			<li>item 3</li>
 		</ul>
 		<ol>
-			<li>item 1</li>
+			<li><a href="#linkhere">item 1</a></li>
 			<li>item 2</li>
 			<li>item 3</li>
 		<ol>
 		<form>
 			<input type="text" placeholder="Name" name="name">
 			<button>Submit!</button>
+			<div>
+				<input name="name" type="text" placeholder="Name">
+				<input name="pass" type="password" placeholder="Pass">
+			</div>
+			<div>
+				Favorite color?
+				<input name="color" type="radio" value="red"> Red
+				<input name="color" type="radio" value="blue"> Blue
+			</div>
+			<div>
+				<input name="country" list="countries" placeholder="Country">
+				<datalist id="countries">
+					<option value="country1">
+					<option value="country2">
+				</datalist>
+			</div>
 		</form>
 		<img src="red_circle.png" height=100 width=200>
 		<img src="red_circle.png" width="50%">
